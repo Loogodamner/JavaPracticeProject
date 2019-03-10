@@ -7,7 +7,7 @@ public class ThreadLocalVariableHolder {
             new ThreadLocal<Integer>(){
                 private Random rand = new Random(1122);
                 protected synchronized Integer initialValue(){
-                    return rand.nextInt(1000);
+                    return rand.nextInt(10000);
                 }
             };
 
